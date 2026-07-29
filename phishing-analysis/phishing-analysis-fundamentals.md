@@ -64,7 +64,7 @@ During the investigation, I identified:
 
 The required information was obtained by examining the relevant email header fields.
 
-![Email Source]()
+![Email Source](images/p-a-fundamental.png)
 
 ## Key Takeaways
 
