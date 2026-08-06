@@ -89,11 +89,11 @@ Advanced display filters were created using comparison operators, logical operat
 
 | Objective | Display Filter | Result |
 |-----------|---------------|-------:|
-| Microsoft IIS packets not originating from port 80 | `http.server contains "Microsoft-IIS" && tcp.srcport != 80` | `21` |
-| Microsoft IIS Version 7.5 packets | `http.server contains "Microsoft-IIS/7.5"` | `71` |
-| Packets using ports 3333, 4444 or 9999 | `tcp.port == 3333 || tcp.port == 4444 || tcp.port == 9999` | `2235` |
-| Packets with even TTL values | `ip.ttl % 2 == 0` | `77289` |
-| Bad TCP Checksum packets *(Checksum Control Profile)* | `tcp.checksum_bad == 1` | `34185` |
+| Microsoft IIS packets not originating from port 80 | `http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)` | `21` |
+| Microsoft IIS Version 7.5 packets | `http.server matches "Microsoft-IIS/7.5"` | `71` |
+| Packets using ports 3333, 4444 or 9999 | `tcp.port in {3333 4444 9999}` | `2235` |
+| Packets with even TTL values | `string(ip.ttl) matches "[02468]$"` | `77289` |
+| Bad TCP Checksum packets *(Checksum Control Profile)* | `tcp.checksum.status == 0` | `34185` |
 | Existing predefined filter supplied by the room | *(Applied using the built-in filtering button)* | `261` |
 
 This exercise demonstrated how multiple filtering techniques can be combined to perform targeted investigations and identify anomalies within packet captures.
