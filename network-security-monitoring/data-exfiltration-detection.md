@@ -12,7 +12,6 @@ The investigation used packet captures and SIEM logs to identify indicators asso
 
 * Wireshark
 * Splunk
-* Linux Terminal
 * PCAP files
 * SIEM-exported logs
 * Network traffic analysis
