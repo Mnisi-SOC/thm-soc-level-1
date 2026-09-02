@@ -79,7 +79,7 @@ snort -r snort.log1640048004 -n 10 -X
 | -------- | ----- |
 | Referer | `http://www.ethereal.com/development.html` |
 
-![REFERER](images/refer.png)
+![REFERER](images/referer.png)
 
 ---
 
