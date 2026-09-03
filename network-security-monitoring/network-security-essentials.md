@@ -22,9 +22,6 @@ Three sets of logs from the time of the incident were provided in the `Perimeter
 * Firewall logs
 * IDS logs
 * VPN authentication logs
-* `grep`
-* `head`
-* `cut`
 
 ---
 
