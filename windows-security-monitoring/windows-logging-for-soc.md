@@ -301,5 +301,4 @@ The investigation demonstrated how multiple Windows logging sources can be corre
 * Backdoor Account Detection
 * Network Connection Analysis
 * PowerShell History Investigation
-* Event ID Correlation
 * SOC Investigation and Triage
