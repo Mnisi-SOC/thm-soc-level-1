@@ -94,7 +94,7 @@ The last Discovery command launched by the script was used to list processes and
 
 The email address found in the script identified the script author as `greg@tryhackme.thm`.
 
-![FLAG](images/detecting-discovery.png)
+![FLAG](images/detection-discovery.png)
 
 ---
 
